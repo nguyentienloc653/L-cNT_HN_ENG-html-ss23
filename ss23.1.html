@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let myArray = [];
+    for (let i = 0; i < 10; i++) {
+    let value = +prompt(`Mời bạn nhập vào số nguyên thứ ${i + 1}`);
+    myArray[i] = value;
+        }
+        console.log(`Mảng ban đầu là ${myArray}`);
+
+
+        let found = false;
+        for(let i = 0; i < myArray.length; i++){
+            if(myArray[i] > 10){
+                console.log(` ${myArray[i]} `);
+                found = true;
+
+            }
+        }
+
+            if(!found){
+                console.log(`Không có số nào lớn hơn 10 `)
+            }
+    </script>
+</body>
+</html>
