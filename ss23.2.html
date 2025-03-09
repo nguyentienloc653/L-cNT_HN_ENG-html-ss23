@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let myArray = [];
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+    let value = +prompt(`Mời bạn nhập vào số nguyên thứ ${i + 1}`);
+    myArray[i] = value;
+        }
+     
+        let arrMax = myArray[0];    
+        index = 0;
+        for(let i = 0; i < myArray.length; i++){
+            if(myArray[i]>arrMax){
+            arrMax = myArray[i] ; 
+            index = i ;
+            }
+            
+        }  
+        
+        console.log(`Số lớn nhất: ${arrMax}`);
+        console.log(`Vị trí : ${index}`);
+    </script>
+</body>
+</html>
