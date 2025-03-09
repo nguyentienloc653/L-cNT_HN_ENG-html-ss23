@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [];
+let n = +prompt("nhap so luong phan tu: ");
+let cnt = 0;
+let sum = 0;
+if (n < 0) {
+  alert("so luong phan tu khong dc nho hon 1");
+} else {
+  if (n == 0) {
+    alert("mang ko co phan tu");
+  } else {
+    for (let i = 0; i < n; i++) {
+      num.push(prompt(`nhap phan tu thu ${i + 1} :`));
+    }
+    for (let i = 0; i < n; i++) {
+      num[i] = Number(num[i]);
+    }
+  }
+  let max = Math.pow(-10, 9);
+  let max2 = Math.pow(-10, 9);
+  let pos = 0;
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] > max) {
+      max = num[i];
+      pos = i;
+    }
+  }
+  for(let i=0;i<num.length;i++){
+    if(num[i]< max){
+        if(num[i] > max2){
+            max2=num[i];
+        }
+    }
+  }
+  alert(`so lon thu hai la : ${max2}`);
+}
+    </script>
+</body>
+</html>
